@@ -25,34 +25,34 @@
 </head>
 <body>
   <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar-microbiome-home" class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Swiss Microbiome</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav-fill w-100 mb-2 mb-lg-0">
+          <ul class="nav navbar-nav nav-fill w-100 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#cover">Home</a>
+              <a class="nav-link active" aria-current="page" href="#cover">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#biograph">Bio</a>
+              <a class="nav-link" href="#biograph">Bio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#why">Why</a>
+              <a class="nav-link" href="#why">Why</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#testimony">Testimonials</a>
+              <a class="nav-link" href="#testimony">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#service">Service</a>
+              <a class="nav-link" href="#service">Service</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#form">Form</a>
+              <a class="nav-link" href="#form">Form</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -60,8 +60,12 @@
     </nav>
   </header>
 
-  <main>
-    <section id="cover"></section>
+  <main data-bs-spy="scroll" data-bs-target="#navbar-microbiome-home" data-bs-offset="0" tabindex="0">
+    <section id="cover">
+      <div class="text-center py-5 my-5">
+        <h3>Swiss Microbiome?</h3>
+      </div>
+    </section>
     <section id="biograph" class="primary">
       <div class="row p-sm-5 m-sm-0">
         <div class="bg-dark col-sm-6 white py-5">A</div>
@@ -179,8 +183,10 @@
     <section id="form"></section>
     <section id="contact"></section>
   </main>
+
   <footer class="text-center p-4 text-muted">&copy; 2021 - Microbiome</footer>
 
   <script src="./dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
