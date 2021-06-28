@@ -1,9 +1,25 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
   position: relative;
 }
+
 .active {
   color: #90a377 !important;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("https://www.kibrispdr.org/data/free-royalty-photo-12.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
