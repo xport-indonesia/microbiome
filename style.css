@@ -6,6 +6,19 @@ body {
   position: relative;
 }
 
+.primary {
+  background-color: #E1EBD5;
+}
+.secondary {
+  background-color: #E8E6E6;
+}
+.light {
+  background-color: #F5F5F5;
+}
+.white {
+  background-color: #fff;
+}
+
 .active {
   color: #90a377 !important;
 }
